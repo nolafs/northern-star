@@ -1,0 +1,60 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
+//tailwind.preset.js
+
+module.exports = {
+  darkMode: 'class',
+  theme: {
+    screens: {
+      xs: '360px',
+      sm: '414px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1440px',
+      '2xl': '1920px',
+    },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '0.5rem',
+        sm: '2rem',
+        md: '2rem',
+        lg: '3rem',
+        xl: '3rem',
+        '2xl': '3rem',
+      },
+    },
+    fontFamily: {
+      sans: ['var(--font-oxanium)'],
+    },
+    fontSize: {
+      ...defaultTheme.fontSize,
+      normal: '1.1rem',
+    },
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      white: colors.white,
+      black: colors.black,
+      red: colors.red,
+      primary: colors.white,
+      secondary: '#acacac',
+      accent: '#E62997',
+      neutral: '#000000',
+    },
+    extend: {
+      maxWidth: {
+        ...defaultTheme.maxWidth,
+        '8xl': '90rem',
+        '9xl': '120rem',
+      },
+    },
+  },
+  safelist: [],
+  variants: {
+    // Your variant configurations
+  },
+  plugins: [
+    // Your custom plugins
+  ],
+};

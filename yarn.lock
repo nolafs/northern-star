@@ -7512,7 +7512,7 @@ nx@15.9.3:
     "@nrwl/nx-win32-arm64-msvc" "15.9.3"
     "@nrwl/nx-win32-x64-msvc" "15.9.3"
 
-nx@19.0.0:
+nx@19.0.0, nx@^19.0.0:
   version "19.0.0"
   resolved "https://registry.yarnpkg.com/nx/-/nx-19.0.0.tgz#0c0d952c4483c1e9f873f2799fc1d647488e2152"
   integrity sha512-+9gykv680iCeF7W+8FtQpeS0Z2NOIyBbvKZv4J3XQq+6g+2fHXicSmsurx2z1VmaRZlOZPH32SbKk+4GNcwJCg==

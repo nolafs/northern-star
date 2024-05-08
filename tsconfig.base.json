@@ -14,7 +14,16 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@northern-star/features": ["libs/shared/features/src/index.ts"],
+      "@northern-star/features/server": ["libs/shared/features/src/server.ts"],
+      "@northern-star/ui": ["libs/shared/ui/src/index.ts"],
+      "@northern-star/ui/server": ["libs/shared/ui/src/server.ts"],
+      "@northern-star/utils": ["libs/shared/utils/src/index.ts"],
+      "@northern-star/utils/server": ["libs/shared/utils/src/server.ts"]
+    }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": ["node_modules", "tmp"],
+  "include": ["**/*.ts", "**/*.tsx", "@types/**/*.d.ts", ".next/types/**/*.ts"],
+  "typeRoots": ["./@types", "./node_modules/@types", "./types"]
 }

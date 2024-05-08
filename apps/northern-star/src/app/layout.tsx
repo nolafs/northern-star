@@ -1,5 +1,10 @@
 import './global.css';
 import {Oxanium} from 'next/font/google';
+import {CookieBanner} from '@northern-star/ui';
+import {GoogleAnalytics} from '@northern-star/utils';
+import {Suspense} from 'react';
+import {Footer} from '@northern-star/features';
+
 
 
 
@@ -23,8 +28,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={oxanium.className}>
-      <body>{children}</body>
+    <html lang="en" className={oxanium.className} data-theme="northernstar">
+    <GoogleAnalytics GA_MEASUREMENT_ID={process.env.NEXT_GOOGLE_ANALYTICS_ID || ''}/>
+    <body>
+
+    {children}
+    <CookieBanner/>
+    </body>
+
+
     </html>
   );
 }

@@ -1,4 +1,5 @@
 import styles from './page.module.css';
+import {Footer} from '@northern-star/features';
 
 
 export default function Index() {
@@ -9,14 +10,28 @@ export default function Index() {
    */
   return (
     <div className={styles.page}>
+
+      <div className={'absolute w-full bottom-0 text-white z-20'}>
+        <Footer/>
+      </div>
+
       <div className="absolute z-10 w-full h-full max-w-none">
         <video playsInline={true} muted={true} autoPlay={true} loop={true}
-          className="object-cover w-full h-full"
+               className="object-cover w-full h-full"
         >
-          <source src="/videos/6s_loop_20mbs.mp4" type="video/mp4" />
+          <source src="/videos/6s_loop_20mbs.webm" type="video/webm"/>
+          <source src="/videos/6s_loop_20mbs.mp4" type="video/mp4"/>
           Your browser does not support the video tag.
         </video>
       </div>
+
+      <form name="contact" data-netlify="true" hidden>
+        <input type="text" name="name"/>
+        <input type="email" name="email"/>
+        <input type="enquiryType" name="enquiryType"/>
+        <input type="agreeToTerms" name="agreeToTerms"/>
+        <textarea name="message"/>
+      </form>
     </div>
   );
 }

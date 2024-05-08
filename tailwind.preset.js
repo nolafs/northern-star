@@ -31,18 +31,19 @@ module.exports = {
       ...defaultTheme.fontSize,
       normal: '1.1rem',
     },
-    colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
-      white: colors.white,
-      black: colors.black,
-      red: colors.red,
-      primary: colors.white,
-      secondary: '#acacac',
-      accent: '#E62997',
-      neutral: '#000000',
-    },
     extend: {
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            h1: {
+              color: '#b5f8ef',
+            },
+            h2: {
+              color: '#b5f8ef',
+            },
+          },
+        },
+      }),
       maxWidth: {
         ...defaultTheme.maxWidth,
         '8xl': '90rem',
@@ -54,7 +55,24 @@ module.exports = {
   variants: {
     // Your variant configurations
   },
+  daisyui: {
+    themes: [
+      "night",
+      {
+        "northernstar": {
+          "primary": "#b5f8ef",
+          "secondary": "#a1a5b7",
+          "accent": "#03eacc",
+          "neutral": "#0c2c29",
+          "neutral-content": "#111b1c",
+          "base-100": "#000000",
+          "base-content": "#F1EFE7",
+        }
+      }
+    ]
+  },
   plugins: [
-    // Your custom plugins
+    require('@tailwindcss/typography'),
+    require('daisyui'),
   ],
 };

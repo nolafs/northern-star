@@ -32,7 +32,7 @@ export default function RootLayout({
     <CookieBanner/>
 
 
-    <form name="contact" data-netlify="true" hidden>
+    <form name="contact" data-netlify="true" netlify hidden>
       <input type="hidden" name="form-name" value="contact"/>
       <input type="text" name="name"/>
       <input type="email" name="email"/>

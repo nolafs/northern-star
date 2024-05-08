@@ -8,8 +8,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: 'Northern Star Game',
     start_url: '/',
     display: 'standalone',
-    background_color: '#222337',
-    theme_color: '#7c80ae',
+    background_color: '#000000',
+    theme_color: '#000000',
     icons: [
       {
         src: '/favicon.ico',

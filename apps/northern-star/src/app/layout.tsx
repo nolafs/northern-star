@@ -5,7 +5,7 @@ import {GoogleAnalytics} from '@northern-star/utils';
 
 
 export const metadata = {
-  title: 'Welcome to northern-star',
+  title: 'Northern Star',
   description: 'Games',
 };
 

@@ -95,18 +95,6 @@ export function ContactForm() {
         />
         {errors.email && <p className="text-error">{errors.email.message}</p>}
 
-        <select
-          className={`select select-bordered w-full ${errors.enquiryType ? 'select-error' : ''}`}
-          {...register('enquiryType')}
-          disabled={isSubmitting}
-        >
-          <option value="" disabled defaultValue="">Nature of Enquiry</option>
-          <option value="general">General Inquiry</option>
-          <option value="feedback">Feedback</option>
-          <option value="other">Other</option>
-        </select>
-        {errors.enquiryType && <p className="text-error">{errors.enquiryType.message}</p>}
-
         <textarea
           placeholder="Message"
           className={`textarea textarea-bordered w-full ${errors.message ? 'textarea-error' : ''}`}

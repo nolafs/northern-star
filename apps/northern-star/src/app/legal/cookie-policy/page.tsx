@@ -38,7 +38,7 @@ export default function Page(props: PageProps) {
       <p>If you have any questions about our Cookie Policy, please contact us at <a
         href="mailto:hello@northernstar.games">hello@northernstar.games</a>.</p>
 
-      <p>This Cookie Policy was last updated on [Date].</p>
+      <p>This Cookie Policy was last updated on 08/05/2024.</p>
     </div>
   );
 }

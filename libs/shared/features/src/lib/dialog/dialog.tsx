@@ -7,10 +7,12 @@ import {XMarkIcon} from '@heroicons/react/24/outline'
 export interface DialogProps {
   children: React.ReactNode;
   dialogTitle: string;
+  icon?: any;
+  hasIcon?: boolean;
   label: string;
 }
 
-export function DialogComponent({children, label, dialogTitle}: DialogProps) {
+export function DialogComponent({children, label, dialogTitle, icon, hasIcon}: DialogProps) {
 
   const [open, setOpen] = useState(false)
 
@@ -20,7 +22,8 @@ export function DialogComponent({children, label, dialogTitle}: DialogProps) {
 
   return (<>
     <div className={styles['container']}>
-      <button className={'hover:text-secondary'} onClick={handleClick}>{label}</button>
+      { (!hasIcon) && <button className={'hover:text-secondary'} onClick={handleClick}>{label}</button> }
+      {( hasIcon) && <button className={'w-20 h-20 p-5 fill-primary border border-primary bg-neutral rounded-full hover:text-secondary'} onClick={handleClick}>{icon}</button>}
     </div>
 
       <Transition show={open} as={Fragment}

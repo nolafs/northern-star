@@ -43,11 +43,14 @@ export function ContactForm() {
       })
 
 
-      if(response) {
+      if (response.status === 200) {
         setIsSubmitting(false);
         setSubmissionSuccess(true);
         toast.success('Your message has been sent!');
         reset(); // Optionally reset form fields
+      } else {
+        setIsSubmitting(false);
+        toast.error('There was an error sending your message. Please try again later.');
       }
     } catch (error) {
       console.log('error', error);

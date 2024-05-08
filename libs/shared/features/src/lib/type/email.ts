@@ -15,5 +15,4 @@ export const emailSchema = z.object({
   email: z.string().email('Please enter a valid email address'),
   enquiryType: z.string().min(1, 'Please select the nature of your enquiry'),
   message: z.string().min(1, 'Please enter your message'),
-  agreeToTerms: z.boolean().refine(val => val, 'You must agree to the Terms & Conditions')
 });

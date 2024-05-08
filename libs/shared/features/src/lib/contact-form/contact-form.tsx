@@ -30,10 +30,13 @@ export function ContactForm() {
 
 
   const onSubmit: SubmitHandler<IContactFormInput> = async (data: any) => {
+
+    console.log('data', data);
+
     setIsSubmitting(true);
     try {
 
-      const response = await fetch('/', {
+      const response = await fetch('/favicon.ico', {
         method: 'POST',
         headers: {'Content-Type': 'application/x-www-form-urlencoded'},
         body: encode({'form-name': 'contact-form', ...data}),

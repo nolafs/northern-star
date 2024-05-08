@@ -36,7 +36,7 @@ export function ContactForm() {
     setIsSubmitting(true);
     try {
 
-      const response = await fetch('/favicon.ico', {
+      const response = await fetch('https://main--northern-star.netlify.app/favicon.ico', {
         method: 'POST',
         headers: {'Content-Type': 'application/x-www-form-urlencoded'},
         body: encode({'form-name': 'contact-form', ...data}),

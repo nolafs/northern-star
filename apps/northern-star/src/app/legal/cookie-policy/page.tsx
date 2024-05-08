@@ -7,7 +7,7 @@ export default function Page(props: PageProps) {
   return (
     <div className={'mx-auto max-w-4xl text-primary prose lg:prose-xl  text-primary'}>
       <h1>Cookie Policy</h1>
-      <p>At Northern Star Game Ltd., we value your privacy and strive to be transparent about the data we collect and
+      <p>At Northern Star, we value your privacy and strive to be transparent about the data we collect and
         how it is used. This Cookie Policy outlines how we use cookies on our website.</p>
 
       <h2>What are cookies?</h2>
@@ -36,7 +36,7 @@ export default function Page(props: PageProps) {
 
       <h2>Contact Us</h2>
       <p>If you have any questions about our Cookie Policy, please contact us at <a
-        href="mailto:contact@northernstargame.com">contact@northernstargame.com</a>.</p>
+        href="mailto:hello@northernstar.games">hello@northernstar.games</a>.</p>
 
       <p>This Cookie Policy was last updated on [Date].</p>
     </div>

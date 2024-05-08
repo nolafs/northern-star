@@ -2,10 +2,6 @@ import './global.css';
 import {Oxanium} from 'next/font/google';
 import {CookieBanner} from '@northern-star/ui';
 import {GoogleAnalytics} from '@northern-star/utils';
-import {Suspense} from 'react';
-import {Footer} from '@northern-star/features';
-
-
 
 
 export const metadata = {

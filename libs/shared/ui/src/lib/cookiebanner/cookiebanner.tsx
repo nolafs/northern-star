@@ -4,10 +4,7 @@ import React, {useState, useEffect} from 'react';
 
 import {getLocalStorage, setLocalStorage} from '@northern-star/utils';
 
-interface CookieBannerProps {
-}
-
-export const CookieBanner = ({}: CookieBannerProps) => {
+export const CookieBanner = () => {
   const [isClient, setIsClient] = useState(false);
   const [cookieConsent, setCookieConsent] = useState(false);
 
@@ -27,7 +24,7 @@ export const CookieBanner = ({}: CookieBannerProps) => {
 
     if(typeof window === 'undefined') return;
 
-    if(!window.gtag) return;
+    if(!window?.gtag) return;
 
     window?.gtag("consent", 'update', {
       'analytics_storage': newValue

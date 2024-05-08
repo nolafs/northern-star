@@ -44,9 +44,9 @@ export const CookieBanner = () => {
                          bg-gray-700 rounded-lg shadow`}>
 
       <div className='text-left'>
-        <Link href={"/cookie-policy"}><p>We use cookies for better user experience and site analytics. By continuing,
+        <Link href={"/legal/cookie-policy"}><p>We use cookies for better user experience and site analytics. By continuing,
           you agree to our use of cookies. Learn more in our <span
-            className='font-bold text-sky-400'>Privacy Policy</span>.</p>
+            className='font-bold text-sky-400'>Cookie Policy</span>.</p>
         </Link>
       </div>
 

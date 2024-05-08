@@ -1,3 +1,5 @@
+declare const window: any;
+
 export const pageview = (GA_MEASUREMENT_ID: string, url: string) => {
 
   if( typeof window === 'undefined' ) return;

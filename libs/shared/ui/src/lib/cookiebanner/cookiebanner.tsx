@@ -4,6 +4,8 @@ import React, {useState, useEffect} from 'react';
 
 import {getLocalStorage, setLocalStorage} from '@northern-star/utils';
 
+declare const window: any;
+
 export const CookieBanner = () => {
   const [isClient, setIsClient] = useState(false);
   const [cookieConsent, setCookieConsent] = useState(false);

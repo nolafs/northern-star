@@ -2,6 +2,7 @@ import './global.css';
 import {Oxanium} from 'next/font/google';
 import {CookieBanner} from '@northern-star/ui';
 import {GoogleAnalytics} from '@northern-star/utils';
+import {Suspense} from 'react';
 
 
 export const metadata = {
@@ -25,7 +26,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={oxanium.className} data-theme="northernstar">
-    <GoogleAnalytics GA_MEASUREMENT_ID={process.env.NEXT_GOOGLE_ANALYTICS_ID || ''}/>
+    <Suspense>
+     <GoogleAnalytics GA_MEASUREMENT_ID={process.env.NEXT_GOOGLE_ANALYTICS_ID || ''}/>
+    </Suspense>
     <body>
 
     {children}

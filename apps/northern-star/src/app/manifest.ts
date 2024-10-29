@@ -3,9 +3,9 @@ import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: process.env.NEXT_STIE_NAME || 'Norther Star',
-    short_name: 'N-S-G',
-    description: 'Northern Star Game',
+    name: process.env.NEXT_STIE_NAME || 'Dog on mars',
+    short_name: 'DOM',
+    description: 'Dog on mars',
     start_url: '/',
     display: 'standalone',
     background_color: '#000000',

@@ -38,7 +38,7 @@ export default function Page(props: PageProps) {
       <p>If you have any questions about our Cookie Policy, please contact us at <a
         href="mailto:hello@dogonmars.com">hello@dogonmars</a>.</p>
 
-      <p>This Cookie Policy was last updated on 08/05/2024.</p>
+      <p>This Cookie Policy was last updated on 29/10/2024.</p>
     </div>
   );
 }

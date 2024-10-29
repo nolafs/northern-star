@@ -36,10 +36,10 @@ module.exports = {
         DEFAULT: {
           css: {
             h1: {
-              color: '#b5f8ef',
+              color: '#EE6F23',
             },
             h2: {
-              color: '#b5f8ef',
+              color: '#EE6F23',
             },
           },
         },
@@ -60,12 +60,12 @@ module.exports = {
       "night",
       {
         "northernstar": {
-          "primary": "#b5f8ef",
+          "primary": "#EE6F23",
           "secondary": "#a1a5b7",
           "accent": "#03eacc",
           "neutral": "#0c2c29",
-          "neutral-content": "#111b1c",
-          "base-100": "#000000",
+          "neutral-content": "#1B202D",
+          "base-100": "#1B202D",
           "base-content": "#F1EFE7",
         }
       }

@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@northern-star/assets": ["apps/northern-star/src/assets/*"],
       "@northern-star/features": ["libs/shared/features/src/index.ts"],
       "@northern-star/features/server": ["libs/shared/features/src/server.ts"],
       "@northern-star/ui": ["libs/shared/ui/src/index.ts"],
@@ -26,6 +27,8 @@
   "exclude": ["node_modules", "tmp"],
   "include": ["**/*.ts", "**/*.tsx", "@types/**/*.d.ts", ".next/types/**/*.ts"],
   "type": ["@types/node", "@types/react", "@types/react-dom", "@types/jest",
-    "@types/gtag.js"],
+    "@types/gtag.js",
+    "@nx/react/typings/image.d.ts"
+  ],
   "typeRoots": ["./@types", "./node_modules/@types", "./types"]
 }

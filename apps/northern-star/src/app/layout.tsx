@@ -6,7 +6,7 @@ import {Suspense} from 'react';
 
 
 export const metadata = {
-  title: 'Northern Star',
+  title: 'Dog on Mars',
   description: 'Games',
 };
 
